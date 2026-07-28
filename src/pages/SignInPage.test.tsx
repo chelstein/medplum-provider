@@ -30,7 +30,7 @@ describe('SignInPage', () => {
   });
 
   function expectSigninPageRendered(): void {
-    expect(screen.getByText('Sign in to Provider')).toBeInTheDocument();
+    expect(screen.getByText('Sign in to the Dr. Star NMD EMR')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Continue' })).toBeInTheDocument();
   }
 

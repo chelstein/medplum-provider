@@ -1,7 +1,8 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Title } from '@mantine/core';
-import { Logo, SignInForm } from '@medplum/react';
+import { SignInForm } from '@medplum/react';
+import { Logo } from '../components/Logo';
 import type { JSX } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 
@@ -25,7 +26,7 @@ export function SignInPage(): JSX.Element {
     >
       <Logo size={32} />
       <Title order={3} py="lg">
-        Sign in to Provider
+        Sign in to the Dr. Star NMD EMR
       </Title>
     </SignInForm>
   );

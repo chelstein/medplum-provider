@@ -2,7 +2,8 @@
 // SPDX-License-Identifier: Apache-2.0
 import { getReferenceString } from '@medplum/core';
 import { useDoseSpotNotifications } from '@medplum/dosespot-react';
-import { AppShell, Loading, Logo, useMedplum, useMedplumProfile } from '@medplum/react';
+import { AppShell, Loading, useMedplum, useMedplumProfile } from '@medplum/react';
+import { Logo } from './components/Logo';
 import {
   IconApps,
   IconBook2,
