@@ -66,6 +66,11 @@ export const PatientPageTabs: PatientPageTabInfo[] = [
   { id: 'timeline', url: '', label: 'Timeline' },
   { id: 'edit', url: 'edit', label: 'Edit' },
   {
+    id: 'intake',
+    url: 'QuestionnaireResponse?_fields=questionnaire,_lastUpdated,status&_sort=-_lastUpdated&subject=Patient/%patient.id',
+    label: 'Intake',
+  },
+  {
     id: 'encounter',
     url: 'Encounter?_count=20&_fields=_lastUpdated,period,status,serviceType&_sort=-_lastUpdated&patient=%patient.id',
     label: 'Visits',
